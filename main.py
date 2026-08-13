@@ -8,6 +8,7 @@ while True:
     select an action:
     1. Create account
     2. login
+    3. exit
     """)
 
     #select the option
@@ -31,5 +32,8 @@ while True:
                     break
                 elif selection == "2":
                     change_balance(AccountID)
+
+    elif option == "3":
+        break
 
    

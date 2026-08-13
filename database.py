@@ -50,6 +50,8 @@ def create_account():
 
     connect.commit()
 
+    print("Account successfully created!")
+
 def login_user():
     username = input("Enter your username: ")
     password = input("Enter your password: ")
@@ -84,7 +86,7 @@ def change_balance(account_id):
         )
 
         cursor.execute(
-            "INSERT INTO transactions (account_id, type, amount) VALUES (?, ?, ?)",
+            "INSERT INTO transactions (accountId, type, amount) VALUES (?, ?, ?)",
             (account_id, "deposit", amount)
         )
 
@@ -106,7 +108,7 @@ def change_balance(account_id):
         )
 
         cursor.execute(
-            "INSERT INTO transactions (account_id, type, amount) VALUES (?, ?, ?)",
+            "INSERT INTO transactions (accountId, type, amount) VALUES (?, ?, ?)",
             (account_id, "withdrawal", amount)
         )
 
