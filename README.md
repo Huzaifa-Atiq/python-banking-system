@@ -24,16 +24,6 @@ A small **command-line banking system** built with Python and SQLite. This proje
 
 No external Python packages are required.
 
-## Project Structure
-
-```text
-.
-├── main.py
-├── database.py
-├── .gitignore
-└── bank.db
-```
-
 ### `main.py`
 
 Handles the **main command-line interface**.
